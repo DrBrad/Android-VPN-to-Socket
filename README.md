@@ -7,7 +7,7 @@ How can I create a proxy or firewall within this library?
 -----------
 All you need to do is modify the ```VPN/Proxy.java``` file.
 
-This project only converts traffic into a Socket. If you want to proxy data I recommend trying my other project. https://github.com/DrBrad/JTun2Socks
+This project only converts traffic into a Socket then relays data. You may inject or modify the in/out if you wish. If you want to proxy data I recommend trying my other project. https://github.com/DrBrad/JTun2Socks
 
 License
 -----------
