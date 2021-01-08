@@ -13,6 +13,10 @@ public class Proxy extends Thread {
 
     private VPNService service;
     public short port;
+    private InputStream clientIn;
+    private OutputStream clientOut;
+    private InputStream serverIn;
+    private OutputStream serverOut;
 
     public Proxy(VPNService service, int port){
         this.service = service;
