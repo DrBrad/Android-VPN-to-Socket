@@ -8,7 +8,9 @@ How can I create a proxy or firewall within this library?
 All you need to do is modify the ```VPN/Proxy.java``` file.
 [Proxy.java](https://github.com/DrBrad/Android-VPN-to-Socket/blob/master/app/src/main/java/vpntosocket/shadowrouter/org/vpntosocket/VPN/Proxy.java)
 
-This project only converts traffic into a Socket then relays data. You may inject or modify the in/out if you wish. If you want to proxy data via SOCKS using this method I recommend trying my other project. https://github.com/DrBrad/JTun2Socks Its basically the same project however I have added the SOCKS5 protocol for you.
+How it works
+-----------
+VPNs and Sockets are on 2 different layers which makes this project a little bit difficult, however the task is not impossible. This project works by sorting packets based off of type: UDP, TCP, ICMTP. We then take all TCP packets and sort them using a NAT, this makes it easier to identify where each packet is supposed to go. Once the packets are sorted we will take the TCP packets and change the IP address and port to a local socket so that you can do whatever you want with the socket.
 
 License
 -----------
