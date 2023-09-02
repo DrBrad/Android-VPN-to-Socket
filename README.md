@@ -2,6 +2,7 @@ VPN to Socket
 ===========
 
 Quick and easy VPN to Socket using packet manipulation. Create proxys and firewalls easily globally!
+For [JTun2Socks](https://github.com/DrBrad/JTun2Socks) Similar to Orbot
 
 How can I create a proxy or firewall within this library? 
 -----------
